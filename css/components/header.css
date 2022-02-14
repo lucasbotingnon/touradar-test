@@ -1,3 +1,8 @@
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
 .custom-header {
     position: fixed;
     top: 0;
