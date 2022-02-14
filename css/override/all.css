@@ -25,3 +25,32 @@ body {
     background-color: var(--background-color);
     overflow-x: hidden;
 }
+
+h1,h2,h3,h4 {
+    color: var(--dark-color);
+    font-weight: 400;
+    margin: .2em 0;
+}
+
+h1 > strong,
+h2 > strong,
+h3 > strong,
+h4 > strong {
+    font-family: 'Rubik Bold', sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24.5px;
+}
+
+h4 {
+    font-size: 21px;
+}

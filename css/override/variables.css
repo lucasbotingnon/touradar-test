@@ -9,4 +9,5 @@
     --error-color: hsl(0, 75%, 59%);
     --info-color: hsl(33, 89%, 56%);
     --shadow: 0 -4px 15px -5px hsl(0, 0%, 0%);
+    --border-radius: 3px;
 }

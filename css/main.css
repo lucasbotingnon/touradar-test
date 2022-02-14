@@ -1,5 +1,7 @@
 @import url(./override/all.css);
 
-.page-content {
-    padding-top: 80px;
+.main-content > .content {
+    height: 2000px;
+    background-color: var(--background-color);
 }
+
