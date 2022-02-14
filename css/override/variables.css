@@ -1,0 +1,12 @@
+:root {
+    --primary-color: hsl(201, 100%, 41%);
+    --secondary-color: hsl(212, 36%, 58%);
+    --dark-color: hsl(210, 29%, 24%);
+    --dark-color-2: hsl(209, 30%, 14%);
+    --light-color: hsl(213, 16%, 59%);
+    --background-color: hsl(214, 21%, 94%);
+    --success-color: hsl(169, 52%, 54%);
+    --error-color: hsl(0, 75%, 59%);
+    --info-color: hsl(33, 89%, 56%);
+    --shadow: 0 -4px 15px -5px hsl(0, 0%, 0%);
+}

@@ -1,0 +1,91 @@
+.custom-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.custom-header > .logo > .image {
+    margin: 0.6rem 2rem;
+}
+
+.custom-header > .nav-toggle {
+    display: none;
+}
+
+.custom-header > .navbar > .list {
+    flex-direction: row;
+
+    list-style: none;
+    gap: 0;
+}
+
+.custom-header > .navbar > .list > .item {
+    color: var(--secondary-color);
+}
+
+.custom-header > .navbar > .list > .item.-active {
+    color: var(--primary-color);
+}
+
+.custom-header > .navbar > .list > .item > .link {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Rubik Bold', sans-serif;
+    margin-inline-end: 1.7em;
+    text-transform: capitalize;
+}
+
+/* I'm using max-width here to use less lines to do the navbar */
+@media (max-width: 768px) {
+    .custom-header > .navbar > .list {
+        position: fixed;
+        z-index: 1000;
+        flex-direction: column;
+        inset: 0 0 0 30%;
+
+        transform: translateX(100%);
+        transition: transform 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+        gap: 2em;
+        list-style: none;
+        padding: min(30vh, 10rem) 2rem;
+        background-color: #ffffff;
+    }
+
+    .custom-header > .navbar > .list[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .custom-header > .nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        top: 1.1rem;
+        right: 1rem;
+        width: 2rem;
+        aspect-ratio: 1;
+        
+        border: none;
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        background-color: transparent;
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .custom-header > .navbar > .list {
+            background-color: hsl(0 0% 100% / 0.3);
+            backdrop-filter: blur(1rem);
+        }
+
+        .custom-header > .nav-toggle {
+            color: var(--secondary-color);
+        }
+    }
+}
