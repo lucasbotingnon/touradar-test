@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/33590079cc.js" crossorigin="anonymous"></script>
-    
+
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link href="css/components/parallax.css" rel="stylesheet" type="text/css" />
-    
+
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="js/events.js" type="text/javascript" defer></script>
 </head>
@@ -23,11 +23,11 @@
                 <h2>Save 15% with</h2>
                 <h1>Early 2022 Deals</h1>
                 <h3>Book now, stay between Jan 1 and Mar 31, 2022</h3>
-                
+
                 <form action="" class="form _flex">
                     <input type="text" class="field _flex" placeholder="Where are you going?">
                     <input type="date" class="field _flex">
-                    <button  type="button" class="button _flex">search</button>
+                    <button type="button" class="button _flex">search</button>
                 </form>
 
                 <h4><strong>Early 2022 Deals</strong> included in your search results</h4>
@@ -35,7 +35,76 @@
         </div>
 
         <div class="content">
-            
+            <div class="filters">
+                <label for="sort"  class="field-container">
+                    Sort by
+                    <select name="sort" id="sort" class="select">
+                        <option value="teste">teste</option>
+                        <option value="teste2">teste2</option>
+                    </select>
+                </label>
+                <label for="filter" class="field-container">
+                    Filter by
+                    <select name="filter" id="filter" class="select">
+                        <option value="teste">teste</option>
+                        <option value="teste2">teste2</option>
+                    </select>
+                </label>
+            </div>
+            <div class="booking-list">
+                <div class="booking-card">
+                    <h4 class="title">Bulgaria Experience (4 days)</h4>
+                    <div class="rating-stars">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviews">
+                            427 reviews
+                        </span>
+                    </div>
+                    <hr class="divider">
+                    <div class="booking-info">
+                        <div class="info destinations">
+                            <span class="label">destinations</span>
+                            <span class="value">Sofia, Plovdiv, Bachkovo</span>
+                        </div>
+                        <div class="info start-ends">
+                            <span class="label">starts / ends in</span>
+                            <span class="value">Sofia / Sofia</span>
+                        </div>
+                        <div class="info operator">
+                            <span class="label">Operator</span>
+                            <span class="value">Bamba Experience</span>
+                        </div>
+                    </div>
+                    <div class="price-duration">
+                        <div class="item duration">
+                            <span class="label">duration</span>
+                            <span class="value">4 days</span>
+                        </div>
+                        <div class="item price">
+                            <span class="label">from</span>
+                            <span class="value">€729</span>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="orders-left">
+                        <div class="day">
+                            <span class="label">28 APR 2019</span>
+                            <span class="value">10 spaces left</span>
+                        </div>
+                        <div class="day">
+                            <span class="label">28 APR 2019</span>
+                            <span class="value">10 spaces left</span>
+                        </div>
+                    </div>
+                    <button class="button">View tour</button>
+                </div>
+            </div>
         </div>
     </main>
 </body>
