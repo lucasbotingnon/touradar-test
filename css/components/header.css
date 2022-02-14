@@ -42,7 +42,7 @@
 .custom-header > .navbar > .list > .item > .link {
     text-decoration: none;
     color: inherit;
-    font-family: 'Rubik Bold', sans-serif;
+    font-family: var(--font-bold);
     margin-inline-end: 1.7em;
     text-transform: capitalize;
 }

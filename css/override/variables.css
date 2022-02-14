@@ -9,5 +9,9 @@
     --error-color: hsl(0, 75%, 59%);
     --info-color: hsl(33, 89%, 56%);
     --shadow: 0 -4px 15px -5px hsl(0, 0%, 0%);
+    --field-border-color: #dbdbdb;
     --border-radius: 3px;
+    --font-light: 'Rubik Light', sans-serif;
+    --font-regular: 'Rubik Regular', sans-serif;
+    --font-bold: 'Rubik Bold', sans-serif;
 }
