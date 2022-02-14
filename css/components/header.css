@@ -48,7 +48,7 @@
 }
 
 /* I'm using max-width here to use less lines to do the navbar */
-@media (max-width: 768px) {
+@media (max-width: 572px) {
     .custom-header > .navbar > .list {
         position: fixed;
         z-index: 1000;
