@@ -19,6 +19,7 @@ window.addEventListener('load', async function() {
  */
 document.getElementById('filter').addEventListener('change', async function() {
 	const deals = await getBookingList() // Reload the booking list
+	bookingList = deals
 
 	deals.forEach(deal => {
 		deal.dates = deal.dates.filter(date => {
@@ -111,6 +112,7 @@ function showDeals(bookingList) {
 	bookingListElement.innerHTML = ''
 
 	bookingList = bookingList.filter(n => n.length > 0)
+
 	console.log(bookingList)
 
 	bookingList.forEach(deal => {
@@ -119,7 +121,9 @@ function showDeals(bookingList) {
 		
 			const template = `
 			<div class="booking-card">
-				<img class="image" src="https://cdn.tourradar.com/s3/tour/645x430/43444_d8912a9b.jpg" />
+				<i class="fa-solid fa-heart"></i>
+				${date.eur > 1500 ? '<span class="offer-percent"><strong class="text">25%</strong></span>' : ''}
+				<img class="image" src="${deal.images[1] ? deal.images[1].url : 'https://cdn.tourradar.com/s3/tour/645x430/14263_da44e9a6.jpg'}" />
 				<div class="rating-stars">
 					<h4 class="title">${deal.name}</h4>
 					<div class="stars">
@@ -140,15 +144,22 @@ function showDeals(bookingList) {
 				<div class="booking-info">
 					<div class="info destinations">
 						<span class="label">destinations</span>
-						<span class="value">Sofia, Plovdiv, Bachkovo</span>
+						<span class="value">
+							${deal.cities[0].name}, ${deal.cities[1].name}
+							<a href="#" class="more">+${deal.cities.length - 2} more</a>
+						</span>
 					</div>
 					<div class="info start-ends">
 						<span class="label">starts / ends in</span>
-						<span class="value">Sofia / Sofia</span>
+						<span class="value">
+							${deal.cities[0].name} / ${deal.cities[1].name}
+						</span>
 					</div>
 					<div class="info operator">
 						<span class="label">Operator</span>
-						<span class="value">Bamba Experience</span>
+						<span class="value">
+							${deal.operator_name}
+						</span>
 					</div>
 				</div>
 				<div class="price-duration">
@@ -158,18 +169,18 @@ function showDeals(bookingList) {
 					</div>
 					<div class="item price">
 						<span class="label">from</span>
-						<span class="value">€${date.eur}</span>
+						<span class="value">€${date.eur.toLocaleString()}</span>
 					</div>
 				</div>
 				<hr class="divider">
 				<div class="orders-left">
 					<div class="day">
-						<span class="label">28 APR 2019</span>
-						<span class="value">10 spaces left</span>
+						<span class="label">${new Date(date.start).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+						<span class="value">${date.availability} spaces left</span>
 					</div>
 					<div class="day">
-						<span class="label">28 APR 2019</span>
-						<span class="value">10 spaces left</span>
+						<span class="label">${new Date(deal.dates[1].start).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+						<span class="value">${deal.dates[1].availability} spaces left</span>
 					</div>
 				</div>
 				<button class="button">View tour</button>

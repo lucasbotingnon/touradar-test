@@ -17,8 +17,13 @@
 
 .main-content > .parallax > .search-form {
     flex-direction: column;
-    padding: 1em;
+    box-sizing: border-box;
+    max-width: 830px;
+    flex-grow: 1;
+    padding: 2em;
     gap: 0.2rem;
+
+
 
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -31,7 +36,7 @@
     gap: .25em;
 }
 
-.main-content > .parallax > .search-form > .form > .field {
+.main-content > .parallax > .search-form > .form > .field[disabled] {
     align-content: center;
     box-sizing: border-box;
     flex-grow: 1;    
@@ -39,13 +44,12 @@
 
     border: 1px solid var(--field-border-color);
     border-radius: var(--border-radius);
-    color: var(--dark-color);
-    transition: all .2s ease-in-out;
-}
+    color: var(--light-color);
+    background: #FFF;
+    padding: 20px;
+    font-size: 16px;
 
-.main-content > .parallax > .search-form > .form > .field:focus {
-    border-color: var(--primary-color);
-    outline: none;
+    transition: all .2s ease-in-out;
 }
 
 .main-content > .parallax > .search-form > .form > .button {

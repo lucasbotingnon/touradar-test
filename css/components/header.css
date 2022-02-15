@@ -3,21 +3,33 @@
     transition: none !important;
 }
 
-.custom-header {
+custom-header:before {
+    content: "";
     position: fixed;
+    z-index: 7000;
     top: 0;
     left: 0;
     right: 0;
-
-    align-items: center;
-    justify-content: space-between;
+    height: 62px;
+    width: 100%;
 
     background-color: #fff;
     box-shadow: var(--shadow);
 }
 
-.custom-header > .logo > .image {
-    margin: 0.6rem 2rem;
+.custom-header {
+    position: fixed;
+    z-index: 8000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 830px;
+    margin: 0 auto;
 }
 
 .custom-header > .nav-toggle {
@@ -32,7 +44,7 @@
 }
 
 .custom-header > .navbar > .list > .item {
-    color: var(--secondary-color);
+    color: var(--light-color);
 }
 
 .custom-header > .navbar > .list > .item.-active {

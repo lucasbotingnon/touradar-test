@@ -1,6 +1,6 @@
 :root {
-    --primary-color: hsl(201, 100%, 41%);
-    --secondary-color: hsl(212, 36%, 58%);
+    --primary-color: #409CD1;
+    --secondary-color: hsl(202, 89%, 33%);
     --dark-color: hsl(210, 29%, 24%);
     --dark-color-2: hsl(209, 30%, 14%);
     --light-color: hsl(213, 16%, 59%);
@@ -8,6 +8,7 @@
     --success-color: hsl(169, 52%, 54%);
     --error-color: hsl(0, 75%, 59%);
     --info-color: hsl(33, 89%, 56%);
+    --info-color-darker: hsl(33, 80%, 50%);
     --shadow: 0 -4px 15px -5px hsl(0, 0%, 0%);
     --field-border-color: #dbdbdb;
     --border-radius: 3px;

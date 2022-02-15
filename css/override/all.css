@@ -17,6 +17,27 @@
     src: url('../../assets/fonts/Rubik-Bold.ttf');
 }
 
+::placeholder {
+color: var(--light-color);
+opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--field-border-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color); 
+}
+
 * {
     font-family: var(--font-regular);
 }
