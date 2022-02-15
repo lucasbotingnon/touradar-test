@@ -3,23 +3,18 @@
 @import url(./helpers.css);
 
 @font-face {
-    font-family: 'Rubik Light';
-    src: url('../../assets/fonts/Rubik-Light.ttf');
+    font-family: 'Roboto Regular';
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Rubik Regular';
-    src: url('../../assets/fonts/Rubik-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Rubik Bold';
-    src: url('../../assets/fonts/Rubik-Bold.ttf');
+    font-family: 'Roboto Bold';
+    src: url('../../assets/fonts/Roboto-Bold.ttf');
 }
 
 ::placeholder {
-color: var(--light-color);
-opacity: 1;
+    color: var(--light-color);
+    opacity: 1;
 }
 
 ::-webkit-scrollbar {
@@ -61,7 +56,7 @@ h4 > strong {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 h2 {
@@ -73,5 +68,5 @@ h3 {
 }
 
 h4 {
-    font-size: 21px;
+    font-size: 17px;
 }

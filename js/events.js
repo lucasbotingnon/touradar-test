@@ -113,8 +113,6 @@ function showDeals(bookingList) {
 
 	bookingList = bookingList.filter(n => n.length > 0)
 
-	console.log(bookingList)
-
 	bookingList.forEach(deal => {
 		if (deal && deal.dates.length > 0) {
 			const date = deal.dates[0]
@@ -176,11 +174,11 @@ function showDeals(bookingList) {
 				<div class="orders-left">
 					<div class="day">
 						<span class="label">${new Date(date.start).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-						<span class="value">${date.availability} spaces left</span>
+						<span class="value ${date.availability < 4 ? 'danger' : ''}">${date.availability > 10 ? '10+' : date.availability} spaces left</span>
 					</div>
 					<div class="day">
 						<span class="label">${new Date(deal.dates[1].start).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-						<span class="value">${deal.dates[1].availability} spaces left</span>
+						<span class="value ${deal.dates[1].availability < 4 ? 'danger' : ''}">${deal.dates[1].availability > 10 ? '10+' : deal.dates[1].availability} spaces left</span>
 					</div>
 				</div>
 				<button class="button">View tour</button>

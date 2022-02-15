@@ -152,6 +152,10 @@
     color: var(--dark-color);
 }
 
+.main-content > .content > .booking-list > .booking-card > .orders-left > .day > .value.danger {
+    color: var(--error-color);
+}
+
 .main-content > .content > .booking-list > .booking-card > .button {
     box-sizing: border-box;
     border: none;
@@ -172,7 +176,7 @@
 @media (min-width: 768px) {
     .main-content > .content > .booking-list > .booking-card  {
         display: grid;
-        grid-template-columns: 200px auto 200px;
+        grid-template-columns: 200px auto 220px;
         column-gap: 2rem;
     }
 
@@ -193,12 +197,12 @@
         height: 0px;
         border-style: inset;
         border-width: 0 40px 40px 40px;
-        border-color: transparent transparent #ff4747 transparent;
+        border-color: transparent transparent var(--error-color) transparent;
     }
 
     .main-content > .content > .booking-list > .booking-card > .offer-percent > .text {
         position: absolute;
-        right: -16px;
+        right: -13px;
         top: 20px;
         font-size: 14px;
         color: #FFF;

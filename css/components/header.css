@@ -17,6 +17,13 @@ custom-header:before {
     box-shadow: var(--shadow);
 }
 
+@supports (backdrop-filter: blur(10px)) {
+    custom-header:before {
+        background-color: rgba(255, 255, 255, 0.767);
+        backdrop-filter: blur(10px);
+    }
+}
+
 .custom-header {
     position: fixed;
     z-index: 8000;
@@ -60,7 +67,11 @@ custom-header:before {
 }
 
 /* I'm using max-width here to use less lines to do the navbar */
-@media (max-width: 572px) {
+@media (max-width: 720px) {
+    .custom-header > .logo {
+        margin-inline-start: 1em;
+    }
+
     .custom-header > .navbar > .list {
         position: fixed;
         z-index: 1000;
@@ -97,12 +108,12 @@ custom-header:before {
 
     @supports (backdrop-filter: blur(1rem)) {
         .custom-header > .navbar > .list {
-            background-color: hsl(0 0% 100% / 0.3);
+            background-color: hsl(0deg 0% 100% / 81%);
             backdrop-filter: blur(1rem);
         }
 
         .custom-header > .nav-toggle {
-            color: var(--secondary-color);
+            color: var(--primary-color);
         }
     }
 }
