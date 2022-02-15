@@ -40,85 +40,34 @@
                 <label for="sort"  class="field-container">
                     Sort by
                     <select name="sort" id="sort" class="select">
-                        <option value="">Popularity: Most popular first</option>
+                        <option value="popularity" selected>Popularity: Most popular first</option>
+                        <option value="highest">Price: Highest</option>
+                        <option value="lowest">Price: Lowest</option>
+                        <option value="longest">Tour: Longest</option>
+                        <option value="shortest">Tour: Shortest</option>
                     </select>
                 </label>
                 <label for="filter" class="field-container">
                     Filter by
                     <select name="filter" id="filter" class="select">
                         <option value="">Departure Date</option>
-                        <option value="01">January</option>
-                        <option value="02">February</option>
-                        <option value="03">March</option>
-                        <option value="04">April</option>
-                        <option value="05">May</option>
-                        <option value="06">June</option>
-                        <option value="07">July</option>
-                        <option value="08">August</option>
-                        <option value="09">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
                     </select>
                 </label>
             </div>
 
-            <div class="booking-list">
-                <div class="booking-card">
-                    <div class="rating-stars">
-                        <h4 class="title">Bulgaria Experience (4 days)</h4>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <span class="reviews">
-                            427 reviews
-                        </span>
-                        <p class="message">
-                            "My husband and i went on this trip and we must admit, this is one of the best vacations..."
-                        </p>
-                    </div>
-                    <hr class="divider">
-                    <div class="booking-info">
-                        <div class="info destinations">
-                            <span class="label">destinations</span>
-                            <span class="value">Sofia, Plovdiv, Bachkovo</span>
-                        </div>
-                        <div class="info start-ends">
-                            <span class="label">starts / ends in</span>
-                            <span class="value">Sofia / Sofia</span>
-                        </div>
-                        <div class="info operator">
-                            <span class="label">Operator</span>
-                            <span class="value">Bamba Experience</span>
-                        </div>
-                    </div>
-                    <div class="price-duration">
-                        <div class="item duration">
-                            <span class="label">duration</span>
-                            <span class="value">4 days</span>
-                        </div>
-                        <div class="item price">
-                            <span class="label">from</span>
-                            <span class="value">€729</span>
-                        </div>
-                    </div>
-                    <hr class="divider">
-                    <div class="orders-left">
-                        <div class="day">
-                            <span class="label">28 APR 2019</span>
-                            <span class="value">10 spaces left</span>
-                        </div>
-                        <div class="day">
-                            <span class="label">28 APR 2019</span>
-                            <span class="value">10 spaces left</span>
-                        </div>
-                    </div>
-                    <button class="button">View tour</button>
-                </div>
+            <div class="booking-list" id="booking-list">
             </div>
         </div>
     </main>
