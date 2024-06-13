@@ -34,8 +34,8 @@
     align-items: end;
 }
 
-.main-content > .content > .booking-list > .booking-card > .rating-stars > .title{
-    font-family: var(--font-bold);
+.main-content > .content > .booking-list > .booking-card > .rating-stars > .title {
+    font-family: var(--font-bold), sans-serif;
     font-size: 15px;
     flex-basis: 100%;
 }
@@ -45,7 +45,7 @@
     font-size: 14px;
 }
 
-.main-content > .content > .booking-list > .booking-card > .rating-stars > .reviews{
+.main-content > .content > .booking-list > .booking-card > .rating-stars > .reviews {
     font-size: 14px;
     display: flex;
     color: var(--light-color);
@@ -115,7 +115,7 @@
 }
 
 .main-content > .content > .booking-list > .booking-card > .price-duration > .item.duration > .value {
-    font-family: var(--font-bold);
+    font-family: var(--font-bold), sans-serif;
     color: var(--dark-color);
 }
 
@@ -124,7 +124,7 @@
 }
 
 .main-content > .content > .booking-list > .booking-card > .price-duration > .item.price > .value {
-    font-family: var(--font-bold);
+    font-family: var(--font-bold), sans-serif;
     color: var(--success-color);
     font-size: 24px;
 }
@@ -174,7 +174,7 @@
 }
 
 @media (min-width: 768px) {
-    .main-content > .content > .booking-list > .booking-card  {
+    .main-content > .content > .booking-list > .booking-card {
         display: grid;
         grid-template-columns: 200px auto 220px;
         column-gap: 2rem;
@@ -193,8 +193,8 @@
         display: inline;
         position: absolute;
         transform: translateX(766px) translateY(-15px) rotate(45deg);
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
         border-style: inset;
         border-width: 0 40px 40px 40px;
         border-color: transparent transparent var(--error-color) transparent;
@@ -208,7 +208,7 @@
         color: #FFF;
     }
 
-    .main-content > .content > .booking-list > .booking-card > .image  {
+    .main-content > .content > .booking-list > .booking-card > .image {
         order: 1;
         grid-row: 4 span;
         aspect-ratio: 1;
@@ -222,7 +222,7 @@
         flex-wrap: wrap;
     }
 
-    .main-content > .content > .booking-list > .booking-card > .rating-stars > .title{
+    .main-content > .content > .booking-list > .booking-card > .rating-stars > .title {
         font-size: 17px;
     }
 
@@ -233,15 +233,15 @@
         color: var(--dark-color);
     }
 
-    .main-content > .content > .booking-list > .booking-card > .rating-stars  {
+    .main-content > .content > .booking-list > .booking-card > .rating-stars {
         order: 2;
     }
 
-    .main-content > .content > .booking-list > .booking-card > .divider  {
+    .main-content > .content > .booking-list > .booking-card > .divider {
         order: 6;
     }
 
-    .main-content > .content > .booking-list > .booking-card > .booking-info  {
+    .main-content > .content > .booking-list > .booking-card > .booking-info {
         position: relative;
         top: -10px;
         order: 10;
@@ -251,15 +251,15 @@
         grid-template-columns: 120px auto;
     }
 
-    .main-content > .content > .booking-list > .booking-card > .price-duration  {
+    .main-content > .content > .booking-list > .booking-card > .price-duration {
         order: 3;
     }
-    
-    .main-content > .content > .booking-list > .booking-card > .orders-left  {
+
+    .main-content > .content > .booking-list > .booking-card > .orders-left {
         order: 9;
     }
-    
-    .main-content > .content > .booking-list > .booking-card > .button  {
+
+    .main-content > .content > .booking-list > .booking-card > .button {
         order: 12;
     }
 }

@@ -1,78 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/33590079cc.js" crossorigin="anonymous"></script>
+    <title>TourRadar Test</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/33590079cc.js"></script>
 
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <link href="css/components/parallax.css" rel="stylesheet" type="text/css" />
-    <link href="css/components/booking-card.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/components/parallax.css" rel="stylesheet" type="text/css"/>
+    <link href="css/components/booking-card.css" rel="stylesheet" type="text/css"/>
 
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="js/events.js" type="text/javascript" defer></script>
+    <script defer src="components/header.js" type="text/javascript"></script>
+    <script defer src="js/events.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <custom-header></custom-header>
+<custom-header></custom-header>
 
-    <main class="main-content">
-        <div class="parallax _flex">
-            <div class="search-form _flex">
-                <h1>Valentine's Sale</h1>
-                <h4>Love is in the air!<br>Celebrate Valentine's Day with up to 50% off and book worry-free with our Peace of Mind program.</h4>
+<main class="main-content">
+    <div class="parallax _flex">
+        <div class="search-form _flex">
+            <h1>Valentine's Sale</h1>
+            <h4>Love is in the air!<br>Celebrate Valentine's Day with up to 50% off and book worry-free with our
+                Peace of Mind program.</h4>
 
-                <form action="" class="form _flex">
-                    <input disabled type="text" class="field _flex" placeholder="Where are you going?">
-                    <input disabled type="date" class="field _flex">
-                    <button disabled type="button" class="button _flex">search</button>
-                </form>
+            <form action="" class="form _flex">
+                <label for="place">
+                    <input class="field _flex"
+                           disabled
+                           id="place"
+                           placeholder="Where are you going?"
+                           type="text"
+                    >
+                </label>
+                <label for="date">
+                    <input class="field _flex"
+                           disabled
+                           id="date"
+                           type="date"
+                    >
+                </label>
+                <button class="button _flex" disabled type="button">search</button>
+            </form>
 
-                <h4><strong>Early 2022 Deals</strong> included in your search results</h4>
-            </div>
+            <h4><strong>Early 2022 Deals</strong> included in your search results</h4>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="filters">
+            <label class="field-container" for="sort">
+                Sort by
+                <select class="select" id="sort" name="sort">
+                    <option selected value="popularity">Popularity</option>
+                    <option value="highest">Highest Price</option>
+                    <option value="lowest">Lowest Price</option>
+                    <option value="longest">Longest Tour</option>
+                    <option value="shortest">Shortest Tour</option>
+                </select>
+            </label>
+            <label class="field-container" for="filter">
+                Filter by
+                <select class="select" id="filter" name="filter">
+                    <option value="">Departure Date</option>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </label>
         </div>
 
-        <div class="content">
-            <div class="filters">
-                <label for="sort"  class="field-container">
-                    Sort by
-                    <select name="sort" id="sort" class="select">
-                        <option value="popularity" selected>Popularity</option>
-                        <option value="highest">Highest Price</option>
-                        <option value="lowest">Lowest Price</option>
-                        <option value="longest">Longest Tour</option>
-                        <option value="shortest">Shortest Tour</option>
-                    </select>
-                </label>
-                <label for="filter" class="field-container">
-                    Filter by
-                    <select name="filter" id="filter" class="select">
-                        <option value="">Departure Date</option>
-                        <option value="0">January</option>
-                        <option value="1">February</option>
-                        <option value="2">March</option>
-                        <option value="3">April</option>
-                        <option value="4">May</option>
-                        <option value="5">June</option>
-                        <option value="6">July</option>
-                        <option value="7">August</option>
-                        <option value="8">September</option>
-                        <option value="9">October</option>
-                        <option value="10">November</option>
-                        <option value="11">December</option>
-                    </select>
-                </label>
-            </div>
-
-            <div class="booking-list" id="booking-list">
-            </div>
+        <div class="booking-list" id="booking-list">
         </div>
-    </main>
+    </div>
+</main>
 </body>
-<html>
-
-</html>
 
 </html>

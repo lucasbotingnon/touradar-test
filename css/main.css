@@ -18,14 +18,14 @@
     gap: .2em;
 
     font-size: 15px;
-    font-family: var(--font-bold);
+    font-family: var(--font-bold), sans-serif;
     color: var(--light-color);
 }
 
 .main-content > .content > .filters > .field-container > .select {
     box-sizing: border-box;
     height: 40px;
-    
+
     border-radius: var(--border-radius);
     border: 1px solid var(--field-border-color);
     color: var(--dark-color);
@@ -52,12 +52,12 @@
         margin: 0 auto;
     }
 
-    .main-content > .content > .filters{
+    .main-content > .content > .filters {
         justify-content: end;
         gap: 2rem;
     }
 
-    .main-content > .content > .filters > .field-container{
+    .main-content > .content > .filters > .field-container {
         flex-direction: row;
         align-items: center;
         gap: 1rem;

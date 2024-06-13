@@ -22,19 +22,19 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--field-border-color); 
+    background: var(--field-border-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color); 
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color); 
+    background: var(--secondary-color);
 }
 
 * {
-    font-family: var(--font-regular);
+    font-family: var(--font-regular), sans-serif;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
     color: var(--dark-color);
     font-weight: 400;
     margin: .2em 0;
@@ -52,7 +52,7 @@ h1 > strong,
 h2 > strong,
 h3 > strong,
 h4 > strong {
-    font-family: var(--font-bold);
+    font-family: var(--font-bold) sans-serif;
 }
 
 h1 {
@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24.5px;
+    font-size: 25px;
 }
 
 h4 {
